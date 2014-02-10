@@ -1,0 +1,45 @@
+# keyremapd
+
+Inspired by [DoubleCommand](http://doublecommand.sourceforge.net) but it does
+not require *kext* installation and it is user-space only.
+
+Right now it provides limited functionality:
+
+* remaps *right Command* to *right Option*
+* maps *right Options* to *keypad Enter* on press/release
+
+Possibly in the future I will either provide user-defaults or *Preferences*
+based configuration.
+
+## Installation
+
+1. `make`
+2. `sudo make install`
+3. `sudo make start`
+
+## Removal
+
+1. `sudo make stop`
+2. `sudo make uninstall`
+
+## License
+
+Copyright &copy; 2014 Adam Strzelecki
+
+> Permission is hereby granted, free of charge, to any person obtaining a copy
+> of this software and associated documentation files (the "Software"), to deal
+> in the Software without restriction, including without limitation the rights
+> to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+> copies of the Software, and to permit persons to whom the Software is
+> furnished to do so, subject to the following conditions:
+
+> The above copyright notice and this permission notice shall be included in
+> all copies or substantial portions of the Software.
+
+> THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+> IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+> FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+> AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+> LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+> OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+> SOFTWARE.

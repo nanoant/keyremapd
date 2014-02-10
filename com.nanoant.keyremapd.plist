@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Label</key>
+	<string>com.nanoant.keyremapd</string>
+	<key>Program</key>
+	<string>/usr/local/sbin/keyremapd</string>
+    <!-- <key>StandardOutPath</key>
+    <string>/var/log/keyremapd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/var/log/keyremapd.log</string> -->
+	<key>ProgramArguments</key>
+	<array>
+		<string>/usr/local/sbin/keyremapd</string>
+	</array>
+	<key>KeepAlive</key>
+	<true/>
+</dict>
+</plist>
