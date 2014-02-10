@@ -17,6 +17,17 @@ based configuration.
 2. `sudo make install`
 3. `sudo make start`
 
+Allow `keyremapd` access *Accessibility*:
+
+1. Open *System Preferences* from the Apple menu.
+2. Click the *Security & Privacy* icon.
+3. Select the *Privacy* tab.
+4. Select *Accessibility* from the list on the left side of the *Privacy* pane.
+5. Click the lock icon in the lower left corner of the window and enter an
+   admin account and password when prompted.
+6. Select the checkbox next to the name of the device or app that is requesting
+   access.
+
 ## Removal
 
 1. `sudo make stop`

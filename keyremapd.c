@@ -127,20 +127,23 @@ void signalHandler(int sig) {
 
 int main(int argc, char const *argv[]) {
   if (!AXIsProcessTrusted()) {
-    fprintf(stderr, "error: enable access for assistive devices in "
-                    "System Preferences -> Universal Access");
+    fprintf(
+        stderr,
+        "error: enable keyremapd Accessibility in "
+        "System Preferences > Security & Privacy > Privacy > Accessibility");
     CFUserNotificationDisplayNotice(
         0, kCFUserNotificationStopAlertLevel, NULL, NULL, NULL,
-        CFSTR("Enable Access for Assistive Devices"),
+        CFSTR("Allow keyremapd Accessibility Access"),
         CFSTR("This setting can be enabled in System Preferences via the "
-              "Universal Access preferences pane"),
+              "Security & Privacy preferences pane, Privacy tab, Accessibility "
+              "setting"),
         CFSTR("OK"));
     return EXIT_FAILURE;
   }
   if (!installEventTap()) {
     CFUserNotificationDisplayNotice(
         0, kCFUserNotificationStopAlertLevel, NULL, NULL, NULL,
-        CFSTR("Cannot Install KeyRemapd"),
+        CFSTR("Cannot Install keyremapd"),
         CFSTR("It is not possible to install event handler, check Console "
               "for errors"),
         CFSTR("OK"));
